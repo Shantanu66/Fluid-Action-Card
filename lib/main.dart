@@ -8,11 +8,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Plant Shop UI',
+      title: 'Swipe card display',
       debugShowCheckedModeBanner: false,
       home: SwipeBox(
-        color1: Colors.deepPurpleAccent,
-        color2: Colors.yellowAccent,
+        color1: Colors.pinkAccent,
+        color2: Colors.black45,
         backgroundcolor: Colors.grey[900],
         borderRadius1: BorderRadius.circular(20),
         borderRadius2: BorderRadius.circular(20),
@@ -29,7 +29,14 @@ class MyApp extends StatelessWidget {
           spreadRadius: 0.2,
           offset: Offset(0, 3),
         ),
-        
+        ontap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              
+            ),
+          );
+        },
       ),
     );
   }

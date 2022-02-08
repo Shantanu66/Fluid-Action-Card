@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_plant_shop_ui/Assets/ImagesDesc.dart';
@@ -23,6 +25,7 @@ class SwipeBox extends StatefulWidget {
   final double Position;
 
   final BoxShadow shadow;
+  final Function ontap;
 
   const SwipeBox(
       {Key key,
@@ -36,7 +39,7 @@ class SwipeBox extends StatefulWidget {
       @required this.backgroundcolor,
       @required this.BoxCount,
       @required this.Position,
-      this.shadow})
+      this.shadow, this.ontap})
       : super(key: key);
 
   @override
@@ -73,6 +76,10 @@ class _SwipeBoxState extends State<SwipeBox>
           ),
         );
       },
+      child: GestureDetector(
+        onTap: () {
+          widget.ontap;
+        },
       child: Stack(
         alignment: Alignment.center,
         children: <Widget>[
@@ -110,6 +117,7 @@ class _SwipeBoxState extends State<SwipeBox>
           ),
         ],
       ),
+    ),
     );
   }
 
