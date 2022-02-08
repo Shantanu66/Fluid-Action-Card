@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class SwipeCard extends StatefulWidget {
+class FluidActionCard extends StatefulWidget {
   //for setting the card's first gradient color
   final Color color1;
   //for setting the card's second gradient color
@@ -41,7 +41,7 @@ class SwipeCard extends StatefulWidget {
   //for setting different images on each card using tags
   final Hero? hero;
 
-  const SwipeCard(
+  const FluidActionCard(
       {Key? key,
       required this.color1,
       required this.color2,
@@ -65,10 +65,10 @@ class SwipeCard extends StatefulWidget {
       : super(key: key);
 
   @override
-  _SwipeCardState createState() => _SwipeCardState();
+  _FluidActionCardState createState() => _FluidActionCardState();
 }
 
-class _SwipeCardState extends State<SwipeCard>
+class _FluidActionCardState extends State<FluidActionCard>
     with SingleTickerProviderStateMixin {
   TabController? _tabController;
   PageController? _pageController;
