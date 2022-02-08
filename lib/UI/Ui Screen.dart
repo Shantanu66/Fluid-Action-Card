@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_plant_shop_ui/Assets/ImagesDesc.dart';
 
 class SwipeBox extends StatefulWidget {
  
@@ -20,6 +21,8 @@ class SwipeBox extends StatefulWidget {
   
   final int BoxCount;
 
+  final double Position;
+
   const SwipeBox(
       {Key key,
       @required this.color1,
@@ -30,7 +33,8 @@ class SwipeBox extends StatefulWidget {
       @required this.width,
       @required this.image1,
       @required this.backgroundcolor,
-      @required this.BoxCount})
+      @required this.BoxCount,
+      @required this.Position})
       : super(key: key);
 
   @override
@@ -85,7 +89,19 @@ class _SwipeBoxState extends State<SwipeBox>
               ),
               margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
               child: Stack(
-                children: <Widget>[],
+                children: <Widget>[
+                  Center(
+                      child: Hero(
+                        tag: plants[index].imageUrl,
+                        child: Image(
+                          height: 270.0,
+                          width: 290.0,
+                          image: widget.image1,
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                ],
               ),
             ),
           ),
@@ -101,11 +117,12 @@ class _SwipeBoxState extends State<SwipeBox>
         body: AnnotatedRegion<SystemUiOverlayStyle>(
             value: SystemUiOverlayStyle.dark,
             child: ListView(
-                padding: EdgeInsets.symmetric(vertical: 190.0),
+                padding: EdgeInsets.symmetric(vertical: 
+                widget.Position),
                 children: <Widget>[
                   Container(
-                    height: 500.0,
-                    width: double.infinity,
+                    height: widget.height,
+                    width: widget.width,
                     child: PageView.builder(
                       controller: _pageController,
                       onPageChanged: (int index) {

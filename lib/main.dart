@@ -16,9 +16,13 @@ class MyApp extends StatelessWidget {
         backgroundcolor: Colors.grey[900],
         borderRadius1: BorderRadius.circular(20),
         borderRadius2: BorderRadius.circular(20),
-        height: 270.3,
+        height: 400.3,
         width: 240.2,
         BoxCount: 2,
+        image1: AssetImage(
+          "assets/images/plant0.png",
+        ),
+        Position: 230.0,
       ),
     );
   }
