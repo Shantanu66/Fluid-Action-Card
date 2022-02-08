@@ -3,25 +3,26 @@ import 'package:flutter/services.dart';
 import 'package:flutter_plant_shop_ui/Assets/ImagesDesc.dart';
 
 class SwipeBox extends StatefulWidget {
- 
   final Color color1;
 
   final Color color2;
   final Color backgroundcolor;
-  
+
   final BorderRadius borderRadius1;
-  
+
   final BorderRadius borderRadius2;
-  
+
   final double height;
-  
+
   final double width;
-  
+
   final AssetImage image1;
-  
+
   final int BoxCount;
 
   final double Position;
+
+  final BoxShadow shadow;
 
   const SwipeBox(
       {Key key,
@@ -34,7 +35,8 @@ class SwipeBox extends StatefulWidget {
       @required this.image1,
       @required this.backgroundcolor,
       @required this.BoxCount,
-      @required this.Position})
+      @required this.Position,
+      this.shadow})
       : super(key: key);
 
   @override
@@ -85,22 +87,23 @@ class _SwipeBoxState extends State<SwipeBox>
                       widget.color1,
                       widget.color2,
                     ]),
+                boxShadow: [widget.shadow],
                 borderRadius: widget.borderRadius2,
               ),
               margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
               child: Stack(
                 children: <Widget>[
                   Center(
-                      child: Hero(
-                        tag: plants[index].imageUrl,
-                        child: Image(
-                          height: 270.0,
-                          width: 290.0,
-                          image: widget.image1,
-                          fit: BoxFit.cover,
-                        ),
+                    child: Hero(
+                      tag: plants[index].imageUrl,
+                      child: Image(
+                        height: 270.0,
+                        width: 290.0,
+                        image: widget.image1,
+                        fit: BoxFit.cover,
                       ),
                     ),
+                  ),
                 ],
               ),
             ),
@@ -117,8 +120,7 @@ class _SwipeBoxState extends State<SwipeBox>
         body: AnnotatedRegion<SystemUiOverlayStyle>(
             value: SystemUiOverlayStyle.dark,
             child: ListView(
-                padding: EdgeInsets.symmetric(vertical: 
-                widget.Position),
+                padding: EdgeInsets.symmetric(vertical: widget.Position),
                 children: <Widget>[
                   Container(
                     height: widget.height,

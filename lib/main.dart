@@ -22,7 +22,14 @@ class MyApp extends StatelessWidget {
         image1: AssetImage(
           "assets/images/plant0.png",
         ),
-        Position: 230.0,
+        Position: 250.0,
+        shadow: BoxShadow(
+          color: Colors.black12,
+          blurRadius: 10.0,
+          spreadRadius: 0.2,
+          offset: Offset(0, 3),
+        ),
+        
       ),
     );
   }
