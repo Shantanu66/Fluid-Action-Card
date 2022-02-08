@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: SwipeBox(
         color1: Colors.deepPurpleAccent,
-        color2: Colors.black54,
+        color2: Colors.yellowAccent,
         backgroundcolor: Colors.grey[900],
         borderRadius1: BorderRadius.circular(20),
         borderRadius2: BorderRadius.circular(20),
@@ -23,4 +23,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

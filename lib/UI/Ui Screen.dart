@@ -2,36 +2,35 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class SwipeBox extends StatefulWidget {
-  @required
+ 
   final Color color1;
-  @required
+
   final Color color2;
-  @required
   final Color backgroundcolor;
-  @required
+  
   final BorderRadius borderRadius1;
-  @required
+  
   final BorderRadius borderRadius2;
-  @required
+  
   final double height;
-  @required
+  
   final double width;
-  @required
+  
   final AssetImage image1;
-  @required
+  
   final int BoxCount;
 
   const SwipeBox(
       {Key key,
-      this.color1,
-      this.color2,
-      this.borderRadius1,
-      this.borderRadius2,
-      this.height,
-      this.width,
-      this.image1,
-      this.backgroundcolor,
-      this.BoxCount})
+      @required this.color1,
+      @required this.color2,
+      @required this.borderRadius1,
+      @required this.borderRadius2,
+      @required this.height,
+      @required this.width,
+      @required this.image1,
+      @required this.backgroundcolor,
+      @required this.BoxCount})
       : super(key: key);
 
   @override
