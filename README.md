@@ -1,13 +1,12 @@
-# gaming_shop_ui
+# Swipe Box Package
 
-A new Flutter project.
+A new Flutter package.
 
 # Description
 
 This project is a UI for a Flutter application.
 
 # Preview Demo
-![ezgif com-gif-maker(4)](https://user-images.githubusercontent.com/64373963/148065661-970248d4-134d-4355-ba69-426d8c1cc3c4.gif)
 
 A few resources to get you started if this is your first Flutter project:
 
