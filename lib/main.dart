@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'UI/SwipeCard.dart';
+import 'SwipeCard/SwipeCard.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -10,7 +11,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Swipe card display',
       debugShowCheckedModeBanner: false,
-      home: SwipeBox(
+      home: Scaffold(
+        body: SwipeCard(
         color1: Colors.pinkAccent,
         color2: Colors.black45,
         backgroundcolor: Colors.grey[900],
@@ -54,6 +56,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
+      )
     );
   }
 }

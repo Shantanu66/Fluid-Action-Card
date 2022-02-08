@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-class SwipeBox extends StatefulWidget {
+class SwipeCard extends StatefulWidget {
   //for setting the card's first gradient color
   final Color color1;
   //for setting the card's second gradient color
@@ -31,7 +31,7 @@ class SwipeBox extends StatefulWidget {
   final double TextPosition_Top;
   final double TextPosition_Down;
 
-  const SwipeBox(
+  const SwipeCard(
       {Key key,
       @required this.color1,
       @required this.color2,
@@ -54,10 +54,10 @@ class SwipeBox extends StatefulWidget {
       : super(key: key);
 
   @override
-  _SwipeBoxState createState() => _SwipeBoxState();
+  _SwipeCardState createState() => _SwipeCardState();
 }
 
-class _SwipeBoxState extends State<SwipeBox>
+class _SwipeCardState extends State<SwipeCard>
     with SingleTickerProviderStateMixin {
   TabController _tabController;
   PageController _pageController;
