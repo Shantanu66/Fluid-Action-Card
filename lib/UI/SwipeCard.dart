@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -32,7 +30,6 @@ class SwipeBox extends StatefulWidget {
   final double ImageWidhth;
   final double TextPosition_Top;
   final double TextPosition_Down;
-  
 
   const SwipeBox(
       {Key key,
@@ -49,8 +46,11 @@ class SwipeBox extends StatefulWidget {
       @required this.shadow,
       @required this.ontap,
       @required this.text1,
-      @required this.text2, 
-      this.ImageHeight, this.ImageWidhth, this.TextPosition_Top, this.TextPosition_Down})
+      @required this.text2,
+      this.ImageHeight,
+      this.ImageWidhth,
+      this.TextPosition_Top,
+      this.TextPosition_Down})
       : super(key: key);
 
   @override
