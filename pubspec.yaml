@@ -1,16 +1,16 @@
-name: swipe_cards
+name: fluid_action_card
 description: A new Flutter project.
 version: 1.0.0+1
 homepage: https://github.com/Shantanu66/Swipe-Card
 
 
 environment:
-  sdk: '>=2.1.0 <3.0.0'
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^0.1.2
+  cupertino_icons: ^1.0.4
 
 dev_dependencies:
   flutter_test:

@@ -17,46 +17,46 @@ class SwipeCard extends StatefulWidget {
   //for setting the card's width
   final double width;
   //for inserting image in the card
-  final Image image1;
+  final Image? image1;
   //for the number of cards the user wants
   final int BoxCount;
   //for setting the position of the card
   final double Position;
   //for setting the shadow of the card
-  final BoxShadow shadow;
+  final BoxShadow? shadow;
   //for gesture detection of the card
-  final Function ontap;
+  final Function? ontap;
   //for adding text to the card
-  final Text text1;
+  final Text? text1;
   //for adding text to the card
-  final Text text2;
+  final Text? text2;
   //for setting image height of the card
-  final double ImageHeight;
+  final double? ImageHeight;
   //for setting image width of the card
-  final double ImageWidhth;
+  final double? ImageWidhth;
   //for setting text position on the card
-  final double TextPosition_Top;
+  final double? TextPosition_Top;
   //for setting text position on the card
-  final double TextPosition_Down;
+  final double? TextPosition_Down;
   //for setting different images on each card using tags
-  final Hero hero;
+  final Hero? hero;
 
   const SwipeCard(
-      {Key key,
-      @required this.color1,
-      @required this.color2,
-      @required this.borderRadius1,
-      @required this.borderRadius2,
-      @required this.height,
-      @required this.width,
+      {Key? key,
+      required this.color1,
+      required this.color2,
+      required this.borderRadius1,
+      required this.borderRadius2,
+      required this.height,
+      required this.width,
       this.image1,
-      @required this.backgroundcolor,
-      @required this.BoxCount,
-      @required this.Position,
-      @required this.shadow,
-      @required this.ontap,
-      @required this.text1,
-      @required this.text2,
+      required this.backgroundcolor,
+      required this.BoxCount,
+      required this.Position,
+      this.shadow,
+      this.ontap,
+      this.text1,
+      this.text2,
       this.ImageHeight,
       this.ImageWidhth,
       this.TextPosition_Top,
@@ -70,8 +70,8 @@ class SwipeCard extends StatefulWidget {
 
 class _SwipeCardState extends State<SwipeCard>
     with SingleTickerProviderStateMixin {
-  TabController _tabController;
-  PageController _pageController;
+  TabController? _tabController;
+  PageController? _pageController;
   int _selectedPage = 0;
 
   @override
@@ -83,11 +83,11 @@ class _SwipeCardState extends State<SwipeCard>
 
   _SwipeSelector(int index) {
     return AnimatedBuilder(
-      animation: _pageController,
-      builder: (BuildContext context, Widget widget) {
+      animation: _pageController!,
+      builder: (BuildContext context, Widget? widget) {
         double value = 1;
-        if (_pageController.position.haveDimensions) {
-          value = _pageController.page - index;
+        if (_pageController!.position.haveDimensions) {
+          value = (_pageController!.page! - index);
           value = (1 - (value.abs() * 0.4)).clamp(0.0, 1.0);
         }
         return Center(
@@ -116,7 +116,7 @@ class _SwipeCardState extends State<SwipeCard>
                         widget.color1,
                         widget.color2,
                       ]),
-                  boxShadow: [widget.shadow],
+                  boxShadow: [widget.shadow!],
                   borderRadius: widget.borderRadius2,
                 ),
                 margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
@@ -129,8 +129,8 @@ class _SwipeCardState extends State<SwipeCard>
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          widget.text1,
-                          widget.text2,
+                          if (widget.text1 != null) widget.text1!,
+                          if (widget.text2 != null) widget.text2!,
                         ],
                       ),
                     ),
