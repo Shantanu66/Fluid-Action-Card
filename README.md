@@ -1,4 +1,4 @@
-# Swipe Box Package
+# Fluid action card Package
 
 A new Flutter package.
 
