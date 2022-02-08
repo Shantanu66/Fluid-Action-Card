@@ -1,7 +1,8 @@
-name: flutter_plant_shop_ui
+name: swipe_cards
 description: A new Flutter project.
-
 version: 1.0.0+1
+homepage: https://github.com/Shantanu66/Swipe-Card
+
 
 environment:
   sdk: '>=2.1.0 <3.0.0'
