@@ -25,9 +25,7 @@ class MyApp extends StatelessWidget {
         height: 400.0,
         width: 240.0,
         BoxCount: 6,
-        image1: AssetImage(
-          "assets/images/plant0.png",
-        ),
+        //image1:, 
         Position: 250.0,
         shadow: BoxShadow(
           color: Colors.black12,
@@ -55,6 +53,7 @@ class MyApp extends StatelessWidget {
             letterSpacing: 2.0,
           ),
         ),
+        
       ),
       )
     );

@@ -6,17 +6,18 @@ class SwipeCard extends StatefulWidget {
   final Color color1;
   //for setting the card's second gradient color
   final Color color2;
+  //for setting the screen(container) background color
   final Color backgroundcolor;
-
+  //for setting the card's borderradius and shape
   final BorderRadius borderRadius1;
-
+  //for setting the card's borderradius and shape
   final BorderRadius borderRadius2;
-
+  //for setting the card's height
   final double height;
-
+  //for setting the card's width
   final double width;
-
-  final AssetImage image1;
+  //for inserting image in the card
+  final Image image1;
 
   final int BoxCount;
 
@@ -30,6 +31,7 @@ class SwipeCard extends StatefulWidget {
   final double ImageWidhth;
   final double TextPosition_Top;
   final double TextPosition_Down;
+  final Object tag;
 
   const SwipeCard(
       {Key key,
@@ -39,7 +41,7 @@ class SwipeCard extends StatefulWidget {
       @required this.borderRadius2,
       @required this.height,
       @required this.width,
-      @required this.image1,
+      this.image1,
       @required this.backgroundcolor,
       @required this.BoxCount,
       @required this.Position,
@@ -50,7 +52,7 @@ class SwipeCard extends StatefulWidget {
       this.ImageHeight,
       this.ImageWidhth,
       this.TextPosition_Top,
-      this.TextPosition_Down})
+      this.TextPosition_Down, this.tag})
       : super(key: key);
 
   @override
@@ -113,13 +115,8 @@ class _SwipeCardState extends State<SwipeCard>
                   children: <Widget>[
                     Center(
                       child: Hero(
-                        tag: "assets/images/plant1.png",
-                        child: Image(
-                          height: widget.ImageHeight,
-                          width: widget.ImageWidhth,
-                          image: widget.image1,
-                          fit: BoxFit.cover,
-                        ),
+                        tag: widget.tag,
+                        child: widget.image1
                       ),
                     ),
                     Positioned(
