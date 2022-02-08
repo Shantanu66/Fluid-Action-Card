@@ -1,10 +1,6 @@
 # Fluid action card Package
 
-A new Flutter package.
-
-# Description
-
-This project is a UI for a Flutter application.
+A Flutter package consisting of pre animated cards(containers) with fluid animation for freely adding user customized cards to the app with heavily customizable options for the cards adding up to an incredible UI experience.You can set the amount of cards for your screen to display withour writing code for creating additonal cards.You can also add multiple texts,images in the card and also customize its color which is in gradient form with various attributes making it a complete package for modern frontend development.
 
 # Preview Demo
 
