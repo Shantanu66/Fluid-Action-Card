@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'UI/Ui Screen.dart';
+import 'UI/SwipeCard.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,9 +16,13 @@ class MyApp extends StatelessWidget {
         backgroundcolor: Colors.grey[900],
         borderRadius1: BorderRadius.circular(20),
         borderRadius2: BorderRadius.circular(20),
-        height: 400.3,
-        width: 240.2,
-        BoxCount: 2,
+        TextPosition_Top: 22.0,
+        TextPosition_Down: 29.0,
+        ImageHeight: 260.0,
+        ImageWidhth: 290.0,
+        height: 400.0,
+        width: 240.0,
+        BoxCount: 6,
         image1: AssetImage(
           "assets/images/plant0.png",
         ),
@@ -32,11 +36,23 @@ class MyApp extends StatelessWidget {
         ontap: () {
           Navigator.push(
             context,
-            MaterialPageRoute(
-              
-            ),
+            MaterialPageRoute(),
           );
         },
+        text1: Text(
+          'STARTS FROM',
+          style: TextStyle(
+              color: Colors.white, fontSize: 15.0, fontStyle: FontStyle.italic),
+        ),
+        text2: Text(
+          '300',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 22.0,
+            fontWeight: FontWeight.w700,
+            letterSpacing: 2.0,
+          ),
+        ),
       ),
     );
   }

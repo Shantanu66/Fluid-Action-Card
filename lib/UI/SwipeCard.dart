@@ -1,12 +1,12 @@
-import 'dart:ffi';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_plant_shop_ui/Assets/ImagesDesc.dart';
 
 class SwipeBox extends StatefulWidget {
+  //for setting the card's first gradient color
   final Color color1;
-
+  //for setting the card's second gradient color
   final Color color2;
   final Color backgroundcolor;
 
@@ -26,6 +26,13 @@ class SwipeBox extends StatefulWidget {
 
   final BoxShadow shadow;
   final Function ontap;
+  final Text text1;
+  final Text text2;
+  final double ImageHeight;
+  final double ImageWidhth;
+  final double TextPosition_Top;
+  final double TextPosition_Down;
+  
 
   const SwipeBox(
       {Key key,
@@ -39,7 +46,11 @@ class SwipeBox extends StatefulWidget {
       @required this.backgroundcolor,
       @required this.BoxCount,
       @required this.Position,
-      this.shadow, this.ontap})
+      @required this.shadow,
+      @required this.ontap,
+      @required this.text1,
+      @required this.text2, 
+      this.ImageHeight, this.ImageWidhth, this.TextPosition_Top, this.TextPosition_Down})
       : super(key: key);
 
   @override
@@ -80,44 +91,55 @@ class _SwipeBoxState extends State<SwipeBox>
         onTap: () {
           widget.ontap;
         },
-      child: Stack(
-        alignment: Alignment.center,
-        children: <Widget>[
-          ClipRRect(
-            borderRadius: widget.borderRadius1,
-            child: Container(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      widget.color1,
-                      widget.color2,
-                    ]),
-                boxShadow: [widget.shadow],
-                borderRadius: widget.borderRadius2,
-              ),
-              margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
-              child: Stack(
-                children: <Widget>[
-                  Center(
-                    child: Hero(
-                      tag: plants[index].imageUrl,
-                      child: Image(
-                        height: 270.0,
-                        width: 290.0,
-                        image: widget.image1,
-                        fit: BoxFit.cover,
+        child: Stack(
+          alignment: Alignment.center,
+          children: <Widget>[
+            ClipRRect(
+              borderRadius: widget.borderRadius1,
+              child: Container(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        widget.color1,
+                        widget.color2,
+                      ]),
+                  boxShadow: [widget.shadow],
+                  borderRadius: widget.borderRadius2,
+                ),
+                margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
+                child: Stack(
+                  children: <Widget>[
+                    Center(
+                      child: Hero(
+                        tag: "assets/images/plant1.png",
+                        child: Image(
+                          height: widget.ImageHeight,
+                          width: widget.ImageWidhth,
+                          image: widget.image1,
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                    Positioned(
+                      top: widget.TextPosition_Top,
+                      right: widget.TextPosition_Down,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          widget.text1,
+                          widget.text2,
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
-    ),
     );
   }
 
