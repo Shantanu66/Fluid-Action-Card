@@ -18,20 +18,28 @@ class SwipeCard extends StatefulWidget {
   final double width;
   //for inserting image in the card
   final Image image1;
-
+  //for the number of cards the user wants
   final int BoxCount;
-
+  //for setting the position of the card
   final double Position;
-
+  //for setting the shadow of the card
   final BoxShadow shadow;
+  //for gesture detection of the card
   final Function ontap;
+  //for adding text to the card
   final Text text1;
+  //for adding text to the card
   final Text text2;
+  //for setting image height of the card
   final double ImageHeight;
+  //for setting image width of the card
   final double ImageWidhth;
+  //for setting text position on the card
   final double TextPosition_Top;
+  //for setting text position on the card
   final double TextPosition_Down;
-  final Object tag;
+  //for setting different images on each card using tags
+  final Hero hero;
 
   const SwipeCard(
       {Key key,
@@ -52,7 +60,8 @@ class SwipeCard extends StatefulWidget {
       this.ImageHeight,
       this.ImageWidhth,
       this.TextPosition_Top,
-      this.TextPosition_Down, this.tag})
+      this.TextPosition_Down,
+      this.hero})
       : super(key: key);
 
   @override
@@ -113,12 +122,7 @@ class _SwipeCardState extends State<SwipeCard>
                 margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
                 child: Stack(
                   children: <Widget>[
-                    Center(
-                      child: Hero(
-                        tag: widget.tag,
-                        child: widget.image1
-                      ),
-                    ),
+                    Center(child: widget.hero),
                     Positioned(
                       top: widget.TextPosition_Top,
                       right: widget.TextPosition_Down,
