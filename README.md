@@ -5,6 +5,9 @@ A Flutter package consisting of pre animated cards(containers) with fluid animat
 # Preview 
 ![image](https://user-images.githubusercontent.com/64373963/153223791-882138dc-379b-4d9a-b727-85540ffabdf4.jpg)
 
+# Demo
+
+
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
