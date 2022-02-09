@@ -9,9 +9,9 @@ A Flutter package consisting of pre animated cards(containers) with fluid animat
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/64373963/153229976-95615ec5-6de1-40d7-8e98-fb188252e5de.gif)
 
 # Example
-* ![Screenshot 2022-02-09 205025](https://user-images.githubusercontent.com/64373963/153231696-a03b8f22-b43c-4d13-b9dc-fd7be6fddeee.png)
+![Screenshot 2022-02-09 205025](https://user-images.githubusercontent.com/64373963/153231696-a03b8f22-b43c-4d13-b9dc-fd7be6fddeee.png)
 
-```
+```dart
 import 'package:flutter/material.dart';
 import 'package:fluid_action_card/FluidActionCard/Fluid_action_card.dart';
 
