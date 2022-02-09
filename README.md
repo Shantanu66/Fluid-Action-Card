@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Swipe card display',
+        title: 'Fluid Action card display',
         debugShowCheckedModeBanner: false,
         home: Scaffold(
           body: FluidActionCard(
