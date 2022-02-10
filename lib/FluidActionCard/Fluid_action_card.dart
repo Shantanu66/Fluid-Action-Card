@@ -32,7 +32,7 @@ class FluidActionCard extends StatefulWidget {
   final double? TextPosition_Top;
   //for setting text position on the card
   final double? TextPosition_Down;
-  //for setting different images on each card using tags
+  //for setting image url
   final String assetimage;
 
   const FluidActionCard(
