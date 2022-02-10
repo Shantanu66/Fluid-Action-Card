@@ -16,10 +16,8 @@ class FluidActionCard extends StatefulWidget {
   final double height;
   //for setting the card's width
   final double width;
-  //for inserting image in the card
-  final Image? image1;
   //for the number of cards the user wants
-  final int BoxCount;
+  final int CardCount;
   //for setting the position of the card
   final double Position;
   //for setting the shadow of the card
@@ -30,16 +28,12 @@ class FluidActionCard extends StatefulWidget {
   final Text? text1;
   //for adding text to the card
   final Text? text2;
-  //for setting image height of the card
-  final double? ImageHeight;
-  //for setting image width of the card
-  final double? ImageWidhth;
   //for setting text position on the card
   final double? TextPosition_Top;
   //for setting text position on the card
   final double? TextPosition_Down;
   //for setting different images on each card using tags
-  final Hero? hero;
+  final String assetimage;
 
   const FluidActionCard(
       {Key? key,
@@ -49,19 +43,16 @@ class FluidActionCard extends StatefulWidget {
       required this.borderRadius2,
       required this.height,
       required this.width,
-      this.image1,
       required this.backgroundcolor,
-      required this.BoxCount,
+      required this.CardCount,
       required this.Position,
       this.shadow,
       this.ontap,
       this.text1,
       this.text2,
-      this.ImageHeight,
-      this.ImageWidhth,
       this.TextPosition_Top,
       this.TextPosition_Down,
-      this.hero})
+      required this.assetimage})
       : super(key: key);
 
   @override
@@ -122,7 +113,18 @@ class _FluidActionCardState extends State<FluidActionCard>
                 margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 30.0),
                 child: Stack(
                   children: <Widget>[
-                    Center(child: widget.hero),
+                    Center(
+                      child: Center(
+                        child: Image(
+                          height: 270.0,
+                          width: 290.0,
+                          image: AssetImage(
+                            widget.assetimage,
+                          ),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
                     Positioned(
                       top: widget.TextPosition_Top,
                       right: widget.TextPosition_Down,
@@ -155,7 +157,7 @@ class _FluidActionCardState extends State<FluidActionCard>
                 children: <Widget>[
                   Container(
                     height: widget.height,
-                    width: widget.width,
+                    width: double.infinity,
                     child: PageView.builder(
                       controller: _pageController,
                       onPageChanged: (int index) {
@@ -163,7 +165,7 @@ class _FluidActionCardState extends State<FluidActionCard>
                           _selectedPage = index;
                         });
                       },
-                      itemCount: widget.BoxCount,
+                      itemCount: widget.CardCount,
                       itemBuilder: (BuildContext context, int index) {
                         return _SwipeSelector(index);
                       },
