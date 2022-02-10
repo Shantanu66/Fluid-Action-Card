@@ -20,7 +20,7 @@ Run this command:<br/>
 
 
 
-# Example
+# Example and Usage
 ![Screenshot 2022-02-09 205025(1)](https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png)
 
 ```dart
