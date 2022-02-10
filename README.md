@@ -50,6 +50,14 @@ class MyApp extends StatelessWidget {
 }
 ```
 ![Screenshot 2022-02-10 101138](https://user-images.githubusercontent.com/64373963/153338603-e4072f98-1fcc-4bcb-a3b0-f2f0c4a979bf.png)
+* First import the dependancy assets to pubspec.yaml
+```dart
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+```
 ```dart
 void main() => runApp(MyApp());
 
