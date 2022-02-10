@@ -103,7 +103,7 @@ class MyApp extends StatelessWidget {
               spreadRadius: 0.2,
               offset: Offset(0, 3),
             ),
-            assetimage: 'assets/images/plant1.png',
+            assetimage: 'assets/images/Xbox.png',
             ontap: () {},
           ),
         ));
