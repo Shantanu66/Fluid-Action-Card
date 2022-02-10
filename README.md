@@ -1,5 +1,6 @@
 ![Pub Version](https://img.shields.io/pub/v/fluid_action_card?color=%23004088&logo=flutter)
 ![GitHub](https://img.shields.io/github/license/Shantanu66/Fluid-Action-Card?color=%23A100FF)
+https://img.shields.io/badge/Animation%20-Package-yellow
 ![GitHub Repo stars](https://img.shields.io/github/stars/Shantanu66/Fluid-Action-Card?style=social)
 
 
