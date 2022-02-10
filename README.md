@@ -10,9 +10,12 @@ A Flutter package consisting of pre animated cards(containers) with fluid animat
 
 # Installation
 You should have [Flutter](https://flutter.dev/) installed in your system.
-Now in your terminal
-Run this command:
-  flutter pub add fluid_action_card
+Now in your terminal <br/>
+Run this command:<br/>
+
+    flutter pub add fluid_action_card
+    
+  
 
 
 
