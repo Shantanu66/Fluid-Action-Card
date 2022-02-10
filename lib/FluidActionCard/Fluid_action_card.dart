@@ -72,7 +72,7 @@ class _FluidActionCardState extends State<FluidActionCard>
     _pageController = PageController(initialPage: 0, viewportFraction: 0.8);
   }
 
-  _SwipeSelector(int index) {
+  _ActionSelector(int index) {
     return AnimatedBuilder(
       animation: _pageController!,
       builder: (BuildContext context, Widget? widget) {
@@ -167,7 +167,7 @@ class _FluidActionCardState extends State<FluidActionCard>
                       },
                       itemCount: widget.CardCount,
                       itemBuilder: (BuildContext context, int index) {
-                        return _SwipeSelector(index);
+                        return _ActionSelector(index);
                       },
                     ),
                   ),
