@@ -24,10 +24,6 @@ Run this command:<br/>
 ![Screenshot 2022-02-09 205025(1)](https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png)
 
 ```dart
-import 'package:flutter/material.dart';
-import 'package:fluid_action_card/FluidActionCard/Fluid_action_card.dart';
-
-void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -54,14 +50,14 @@ class MyApp extends StatelessWidget {
               offset: Offset(0, 3),
             ),
             ontap: () {},
-            
-            
-          ),
-        ));
+           ),
+        )
+      );
   }
 }
 ```
 ![Screenshot 2022-02-10 101138](https://user-images.githubusercontent.com/64373963/153338603-e4072f98-1fcc-4bcb-a3b0-f2f0c4a979bf.png)
+> To add images to the animated cards follow this procedure:
 * First import the dependancy assets to pubspec.yaml
 ```dart
 flutter:
