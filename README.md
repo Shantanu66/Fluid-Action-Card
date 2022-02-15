@@ -126,4 +126,4 @@ class MyApp extends StatelessWidget {
 }
 ```
 # Support the Library
-You can support the library by liking it on pub, staring in on Github and reporting any bugs you encounter.
+You can support the library by liking it on pub, staring in on Github and reporting any bugs you encounter.Feel Free to add to it and make it better by contributing to it
