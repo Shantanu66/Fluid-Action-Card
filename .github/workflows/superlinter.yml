@@ -12,6 +12,12 @@ jobs:
 
       - name: Run Super-Linter
         uses: github/super-linter@v3.17.0
+        with:
+             
+              production-branch: master
+              enable-pull-request-comment: false
+              enable-commit-comment: true
+              overwrites-pull-request-comment: true
+    
         env:
           DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
