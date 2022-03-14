@@ -31,7 +31,7 @@ Run this command:<br/>
 
 # Example and Usage
 <p align="center">
-<img src="https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png" width="310" height="640">
+<img src="https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png" width="310" height="400">
 </p>
 
 
