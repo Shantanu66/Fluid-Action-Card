@@ -14,7 +14,10 @@ A Flutter package consisting of pre-animated cards(containers) with fluid animat
 ![image](https://user-images.githubusercontent.com/64373963/153223791-882138dc-379b-4d9a-b727-85540ffabdf4.jpg)
 
 # Demo
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/64373963/153229976-95615ec5-6de1-40d7-8e98-fb188252e5de.gif)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/64373963/153229976-95615ec5-6de1-40d7-8e98-fb188252e5de.gif" width="310" height="640">
+<img src="https://raw.githubusercontent.com/iamSahdeep/liquid_swipe_flutter/master/assets/another.gif" width="310" height="640">
+</p>
 
 # Installation
 You should have [Flutter](https://flutter.dev/) installed in your system.<br/>
