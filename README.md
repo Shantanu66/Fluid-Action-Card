@@ -73,6 +73,7 @@ class MyApp extends StatelessWidget {
 </p>
 > To add images to the animated cards follow this procedure:
 * First import the dependancy assets to pubspec.yaml
+
 ```dart
 flutter:
   uses-material-design: true
@@ -80,6 +81,7 @@ flutter:
   assets:
     - assets/images/
 ```
+</br>
 ```dart
 void main() => runApp(MyApp());
 
