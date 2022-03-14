@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
 ```
 <p align="center">
 <img src="https://user-images.githubusercontent.com/64373963/153338603-e4072f98-1fcc-4bcb-a3b0-f2f0c4a979bf.png" width="310" height="520">
-</p>
+
 > To add images to the animated cards follow this procedure:
 * First import the dependancy assets to pubspec.yaml
 
