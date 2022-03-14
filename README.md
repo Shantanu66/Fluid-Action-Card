@@ -26,7 +26,7 @@ A Flutter package consisting of pre-animated cards(containers) with fluid animat
 
 # Demo
 <p align="center">
-<img src="https://user-images.githubusercontent.com/64373963/153229976-95615ec5-6de1-40d7-8e98-fb188252e5de.gif" width="310" height="640">
+<img src="https://user-images.githubusercontent.com/64373963/153229976-95615ec5-6de1-40d7-8e98-fb188252e5de.gif" width="310" height="500">
 </p>
 
 # Installation
