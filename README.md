@@ -81,7 +81,7 @@ flutter:
   assets:
     - assets/images/
 ```
-</br>
+
 ```dart
 void main() => runApp(MyApp());
 
