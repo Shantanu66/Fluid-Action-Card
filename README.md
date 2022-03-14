@@ -9,8 +9,8 @@
   <img src="https://img.shields.io/pub/v/fluid_action_card?color=%23004088&logo=flutter">
   <img src="https://img.shields.io/github/license/Shantanu66/Fluid-Action-Card?color=%23A100FF">
   <img src="https://img.shields.io/badge/Animation%20-Package-yellow">
-  <img src="https://img.shields.io/github/stars/Shantanu66/Fluid-Action-Card?style=social">
   <img src="https://img.shields.io/github/repo-size/Shantanu66/Fluid-Action-Card?color=orange">
+  <img src="https://img.shields.io/github/stars/Shantanu66/Fluid-Action-Card?style=social">
 </p>
 
 
