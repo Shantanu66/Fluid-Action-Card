@@ -1,6 +1,6 @@
 <h1 align="center" xmlns="http://www.w3.org/1999/html">
   <br>
-   <img src="https://user-images.githubusercontent.com/64373963/158167457-37bb28e9-9197-4492-a733-4f0f4cc159ce.png" width=860 height=290/>
+   <img src="https://user-images.githubusercontent.com/64373963/158167457-37bb28e9-9197-4492-a733-4f0f4cc159ce.png" width=860 height=250/>
   <br>
 </h1>
 
