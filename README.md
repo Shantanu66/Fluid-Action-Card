@@ -16,7 +16,6 @@ A Flutter package consisting of pre-animated cards(containers) with fluid animat
 # Demo
 <p align="center">
 <img src="https://user-images.githubusercontent.com/64373963/153229976-95615ec5-6de1-40d7-8e98-fb188252e5de.gif" width="310" height="640">
-
 </p>
 
 # Installation
@@ -31,7 +30,10 @@ Run this command:<br/>
 
 
 # Example and Usage
-![Screenshot 2022-02-09 205025(1)](https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png" width="310" height="640">
+</p>
+
 
 ```dart
 
