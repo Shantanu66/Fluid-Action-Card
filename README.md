@@ -1,20 +1,33 @@
-![Pub Version](https://img.shields.io/pub/v/fluid_action_card?color=%23004088&logo=flutter)
-![GitHub](https://img.shields.io/github/license/Shantanu66/Fluid-Action-Card?color=%23A100FF)
-![My badge](https://img.shields.io/badge/Animation%20-Package-yellow)
-![GitHub Repo stars](https://img.shields.io/github/stars/Shantanu66/Fluid-Action-Card?style=social)
+<h1 align="center" xmlns="http://www.w3.org/1999/html">
+  <br>
+   <img src="https://user-images.githubusercontent.com/64373963/158168111-a773b83e-71be-47dd-a43b-8e12b0c33c8d.png" width=860 />
+  <br>
+</h1>
+
+
+<p align="center">
+  <img src="https://img.shields.io/pub/v/fluid_action_card?color=%23004088&logo=flutter">
+  <img src="https://img.shields.io/github/license/Shantanu66/Fluid-Action-Card?color=%23A100FF">
+  <img src="https://img.shields.io/badge/Animation%20-Package-yellow">
+  <img src="https://img.shields.io/github/repo-size/Shantanu66/Fluid-Action-Card?color=orange">
+  <img src="https://img.shields.io/github/stars/Shantanu66/Fluid-Action-Card?style=social">
+</p>
+
 
 
 
 # Fluid action card Package
 
-A Flutter package consisting of pre animated cards(containers) with fluid animation for freely adding user customized cards to the app with heavily customizable options for the cards adding up to an incredible UI experience.You can set the amount of cards for your screen to display without writing code for creating additonal cards and also writing your own animation mechanism.You can also add multiple texts,images in the card and also customize its color which is in gradient form with various attributes making it a complete package for modern frontend development.
+A Flutter package consisting of pre-animated cards(containers) with fluid animation for freely adding user customized cards to the app with heavily customizable options for the cards adding up to an incredible UI experience.You can set the amount of cards for your screen to display without writing code for creating additonal cards and also writing your own animation mechanism.You can also add multiple texts and images in the card and also customize its color which is in gradient form with various attributes making it a complete package for modern frontend development.
 
 
 # Preview 
-![image](https://user-images.githubusercontent.com/64373963/153223791-882138dc-379b-4d9a-b727-85540ffabdf4.jpg)
+![Screenshot 2022-03-16 135641](https://user-images.githubusercontent.com/64373963/158547901-a374f7d2-5b32-4a35-8999-fe1e73052364.png)
 
 # Demo
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/64373963/153229976-95615ec5-6de1-40d7-8e98-fb188252e5de.gif)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/64373963/158566922-07af4787-a543-4ccb-866a-8883b10d533d.gif">
+</p>
 
 # Installation
 You should have [Flutter](https://flutter.dev/) installed in your system.<br/>
@@ -28,7 +41,10 @@ Run this command:<br/>
 
 
 # Example and Usage
-![Screenshot 2022-02-09 205025(1)](https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png" width="310" height="520">
+</p>
+
 
 ```dart
 
@@ -63,9 +79,12 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
-![Screenshot 2022-02-10 101138](https://user-images.githubusercontent.com/64373963/153338603-e4072f98-1fcc-4bcb-a3b0-f2f0c4a979bf.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/64373963/153338603-e4072f98-1fcc-4bcb-a3b0-f2f0c4a979bf.png" width="310" height="460">
+
 > To add images to the animated cards follow this procedure:
 * First import the dependancy assets to pubspec.yaml
+
 ```dart
 flutter:
   uses-material-design: true
@@ -73,6 +92,7 @@ flutter:
   assets:
     - assets/images/
 ```
+
 ```dart
 void main() => runApp(MyApp());
 
@@ -126,4 +146,4 @@ class MyApp extends StatelessWidget {
 }
 ```
 # Support the Library
-You can support the library by liking it on pub, staring in on Github and reporting any bugs you encounter.
+You can support the library by liking it on pub, staring in on Github and reporting any bugs you encounter.Feel Free to add to it and make it better by contributing to it
