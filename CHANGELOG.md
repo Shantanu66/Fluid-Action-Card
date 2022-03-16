@@ -7,3 +7,5 @@
  - improved the description
 [1.0.0+4]
  - added example
+[1.0.0+5]
+ - updated Readme
