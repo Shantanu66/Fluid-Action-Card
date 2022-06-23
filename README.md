@@ -40,7 +40,8 @@ You should have [Flutter](https://flutter.dev/) installed in your system.<br/>
 
 
 
-# Example and Usage
+# Example and Usage:
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/64373963/153234878-f23e4f19-1ef5-4e55-8bd8-c52249b59459.png" width="310" height="520">
 </p>
