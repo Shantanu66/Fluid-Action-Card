@@ -30,7 +30,7 @@ A `Flutter` package consisting of `pre-animated cards(containers)` with `fluid a
 </p>
 
 # Installation
-You should have [Flutter](https://flutter.dev/) installed in your system.<br/>
+You should have [Flutter](https://flutter.dev/) installed in your System.<br/>
 > Now in your terminal <br/>
 * Run this command:<br/>
 
